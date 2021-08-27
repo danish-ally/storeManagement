@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+.about-cont {
+  /* Rectangle 1 */
+  /* position: absolute; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  left: 0px;
+  top: 0px;
+  background: #dbdbdb;
+  padding: 2rem;
+  
+}
+.about-cont .experienceCont{
+  /* I work on.. */
+
+/* position: absolute; */
+/* width: 173px;
+height: 50px;
+left: 151px;
+top: 153px; */
+
+font-family: 'DM Serif Display', serif;
+font-style: normal;
+font-weight: normal;
+/* font-size: 36px; */
+/* identical to box height */
+
+color: #000000;
+/* padding: 4rem; */
+width: 80%;
+}
+
+.about-cont .circle {
+  display: flex;
+}
+.about-cont .circle .esp2 {
+  /* Ellipse 2 */
+
+  /* position: absolute; */
+  width: 17px;
+  height: 17px;
+  left: 1221px;
+  top: 241px;
+  border-radius: 50%;
+  background: #605f5f;
+  transform: rotate(90deg);
+  margin-top: 35px;
+}
+.about-cont .circle .esp1, .esp3, .esp4, .esp5 {
+  /* Ellipse 2 */
+
+  /* position: absolute; */
+  width: 17px;
+  height: 17px;
+  left: 1221px;
+  top: 241px;
+  border-radius: 50%;
+  background: #fff;
+  transform: rotate(90deg);
+  margin-top: 35px;
+}
+
+.all-btn  button:active{
+  color: black;
+}
+.all-btn  button:focus{
+  color: black;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+/* .all-btn  button:focus{
+  color: black;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+} */

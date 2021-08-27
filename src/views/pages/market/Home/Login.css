@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+.login-cont {
+  /* Rectangle 1 */
+  display: flex;
+  /* justify-content: space-around; */
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+  left: 0px;
+  top: 0px;
+  background: #dbdbdb;
+  padding: 6rem;
+}
+.login-cont .left-cont{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.login-cont .left-cont .title {
+  /* Member of My community? */
+  width: 450px;
+  height: 50px;
+  left: 200px;
+  top: 177px;
+
+  font-family: 'DM Serif Display', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 50px;
+  /* identical to box height */
+
+  color: #000000;
+}
+.login-cont .mid-btn{
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+
+.button2 {
+  position: relative;
+  display: inline-block;
+  padding: 30px 61px;
+  border-radius: 4px;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  /* margin: 25px; */
+  margin-top: 12px;
+  font-family: 'DM Serif Display', serif;
+  filter: hue-rotate(0deg);
+  border: 2px solid #d2bdff;
+  transition: all 0.1s linear;
+}
+.button2:hover {
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.button2:hover span {
+  position: absolute;
+  display: block;
+}
+.button2:hover span:nth-child(1) {
+  filter: hue-rotate(0deg);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #3a86ff);
+  animation: animate1 1s linear infinite;
+}
+@keyframes animate1 {
+  0% {
+    left: -100%;
+  }
+  50%, 100% {
+    left: 100%;
+  }
+}
+.button2:hover span:nth-child(2) {
+  filter: hue-rotate(60deg);
+  top: -100%;
+  right: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #3a86ff);
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+@keyframes animate2 {
+  0% {
+    top: -100%;
+  }
+  50%, 100% {
+    top: 100%;
+  }
+}
+.button2:hover span:nth-child(3) {
+  filter: hue-rotate(120deg);
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background: linear-gradient(270deg, transparent, #3a86ff);
+  animation: animate3 1s linear infinite;
+  animation-delay: 0.5s;
+}
+@keyframes animate3 {
+  0% {
+    right: -100%;
+    height: 3px;
+  }
+  50%, 100% {
+    height: 2px;
+    right: 100%;
+  }
+}
+.button2:hover span:nth-child(4) {
+  filter: hue-rotate(300deg);
+  bottom: -100%;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #3a86ff);
+  animation: animate4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+@keyframes animate4 {
+  0% {
+    bottom: -100%;
+  }
+  50%, 100% {
+    bottom: 100%;
+  }
+}
+.login-cont .cnt-form {
+  /* padding: 3rem; */
+  /* height: 50%; */
+  width: 100%;
+  margin-top: 30px;
+}
+.cnt-form form {
+  /* box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; */
+  /* padding: 2rem; */
+}
+input[type="text"],
+input[type="password"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  background: #c4c4c4;
+}
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+  background: #fff;
+}
+
+input[type="submit"] {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+.login-cont .right-circle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.login-cont .right-circle .esp5 {
+  /* Ellipse 2 */
+
+  /* position: absolute; */
+  width: 17px;
+  height: 17px;
+  left: 1221px;
+  top: 241px;
+  border-radius: 50%;
+  background: #605f5f;
+  transform: rotate(90deg);
+  margin-top: 35px;
+}
+.login-cont .right-circle .esp1,
+.esp2,
+.esp3,
+.esp4 {
+  /* Ellipse 2 */
+
+  /* position: absolute; */
+  width: 17px;
+  height: 17px;
+  left: 1221px;
+  top: 241px;
+  border-radius: 50%;
+  background: #fff;
+  transform: rotate(90deg);
+  margin-top: 35px;
+}

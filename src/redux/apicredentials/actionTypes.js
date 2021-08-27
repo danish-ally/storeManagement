@@ -1,0 +1,7 @@
+ 
+export const RETRIEVE_TOKEN = 'RETRIEVE_TOKEN';
+export const REQ = 'REQ';
+export const REQ_SUCCESS = 'REQ_SUCCESS';
+export const REQ_FAILURE = 'REQ_FAILURE';
+export const REQ_SUCCESS_NEW_CRED = 'REQ_SUCCESS_NEW_CRED';
+export const DELETE_CREDENTIAL = 'DELETE_CREDENTIAL';

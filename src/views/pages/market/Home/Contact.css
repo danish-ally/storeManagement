@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+.contact-cont {
+  display: flex;
+  /* justify-content: space-around; */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  left: 0px;
+  top: 0px;
+  background: #dbdbdb;
+  padding: 2rem;
+}
+.contact-cont .left-cont1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contact-cont .left-cont1 .title2 {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 5rem;
+  /* height: 28vh; */
+  color: white;
+  font-family: 'DM Serif Display', serif;
+  margin-top: 3rem;
+  width: 100%;
+}
+.contact-cont .left-cont1 .title2 h3 {
+  /* Get in touch.. */
+  width: 214px;
+  height: 50px;
+  left: 200px;
+  top: 121px;
+
+  font-family: 'DM Serif Display', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 50px;
+  /* identical to box height */
+
+  color: #000000;
+}
+.contact-cont .contact-form {
+  padding: 3rem;
+  /* height: 50%; */
+  width: 95%;
+}
+.contact-form form {
+  /* box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; */
+  padding: 2rem;
+}
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  background: #C4C4C4;
+}
+input[type="text"]:focus,
+select:focus,
+textarea:focus{
+  
+  background: #fff;
+}
+
+input[type="submit"] {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  /* background-color: #f2f2f2; */
+  padding: 20px;
+}
+
+.contact-cont .middle-btn {
+  display: flex;
+    width: 30%;
+    height: 100vh;
+    align-items: flex-end;
+    margin-bottom: 100px;
+}
+
+.contact-cont .right-circle {
+  padding-right: 4rem;
+}
+.contact-cont .right-circle .esp1 {
+  /* Ellipse 2 */
+
+  /* position: absolute; */
+  width: 17px;
+  height: 17px;
+  left: 1221px;
+  top: 241px;
+  border-radius: 50%;
+  background: #605f5f;
+  transform: rotate(90deg);
+  margin-top: 35px;
+}
+.contact-cont .right-circle .esp4 {
+  /* Ellipse 2 */
+
+  /* position: absolute; */
+  width: 17px;
+  height: 17px;
+  left: 1221px;
+  top: 241px;
+  border-radius: 50%;
+  background: #605f5f;
+  transform: rotate(90deg);
+  margin-top: 35px;
+}
+.contact-cont .right-circle .esp1, .esp2, .esp3, .esp5 {
+  /* Ellipse 2 */
+
+  /* position: absolute; */
+  width: 17px;
+  height: 17px;
+  left: 1221px;
+  top: 241px;
+  border-radius: 50%;
+  background: #fff;
+  transform: rotate(90deg);
+  margin-top: 35px;
+}

@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+.home-cont {
+  /* Rectangle 1 */
+  /* position: absolute; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  left: 0px;
+  top: 0px;
+  background: #dbdbdb;
+  
+  /* background: url("https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260") center center / cover
+      no-repeat fixed; */
+  
+  padding: 2rem;
+}
+.home-cont .intro .desc {
+  /* Hi I’m Nadeem. Im the Ceo of TechHub! */
+  /* position: absolute; */
+  width: 376px;
+  height: 100px;
+  left: 125px;
+  top: 270px;
+  font-family: 'DM Serif Display', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 50px;
+  color: #000000;
+}
+.home-cont .intro .get-btn {
+  /* position: absolute; */
+  width: 300px;
+  height: 68px;
+  left: 125px;
+  top: 382px;
+}
+.home-cont .photo {
+  /* Rectangle 10 */
+
+  /* position: absolute; */
+  width: 571px;
+  height: 472px;
+  left: 587px;
+  top: 123px;
+  cursor: pointer;
+  background: #c4c4c4;
+}
+.home-cont .circle {
+  display: flex;
+}
+.home-cont .circle .esp1 {
+  /* Ellipse 2 */
+
+  /* position: absolute; */
+  width: 17px;
+  height: 17px;
+  left: 1221px;
+  top: 241px;
+  border-radius: 50%;
+  background: #605f5f;
+  transform: rotate(90deg);
+  margin-top: 35px;
+}
+.home-cont .circle .esp2, .esp3, .esp4, .esp5{
+  /* Ellipse 2 */
+
+  /* position: absolute; */
+  width: 17px;
+  height: 17px;
+  left: 1221px;
+  top: 241px;
+  border-radius: 50%;
+  background: #fff;
+  transform: rotate(90deg);
+  margin-top: 35px;
+}
