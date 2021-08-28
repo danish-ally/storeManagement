@@ -17,6 +17,7 @@ const SyntaxBrokerInput = (props) => {
                     borderRadius: 5,
                     marginTop: 5,
                     padding: 2,
+                    width: "50%"
                   }}
                   value={props.value}
                   type="text"
