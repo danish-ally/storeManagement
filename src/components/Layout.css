@@ -1,0 +1,5 @@
+@media only screen and (max-width: 670px) {
+   .sidebar{
+       flex-direction: column;
+   }
+  }
