@@ -1,5 +1,5 @@
 import React from "react";
-import { useSelector} from "react-redux";
+import { useSelector } from "react-redux";
 import { HashRouter, Redirect, Route, Switch } from "react-router-dom";
 import "./scss/style.scss";
 
@@ -14,7 +14,8 @@ const TheLayout = React.lazy(() => import("./containers/TheLayout"));
 
 // Pages
 const Page404 = React.lazy(() => import("./views/pages/page404/Page404"));
-const Market = React.lazy(() => import('./views/pages/market/Market'))
+const Market = React.lazy(() => import("./views/pages/market/Market"));
+const Contact = React.lazy(() => import("./views/pages/market/Home/Contact"));
 
 function App() {
   const authState = useSelector((state) => state.authState);
@@ -52,6 +53,11 @@ function App() {
                 render={(props) => <Page404 {...props} />}
               />
               <Redirect to="/website" />
+              <Route
+                path="/contact"
+                name="Contact"
+                render={(props) => <Contact {...props} />}
+              />
             </>
           )}
         </Switch>

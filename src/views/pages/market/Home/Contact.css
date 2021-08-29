@@ -141,3 +141,9 @@ input[type="submit"]:hover {
   transform: rotate(90deg);
   margin-top: 35px;
 }
+.contact-cont .middle-btn .toastBody {
+  font-family: "Atlas Grotesk Web", Arial, Helvetica, sans-serif;
+  color: #10171D; /* #10171D */
+  font-size: 0.875rem !important;
+  height: 20px;
+}

@@ -83,7 +83,7 @@ function Contact() {
         state.Email === "" ||
         state.subject === "" ? (
           <>
-            <div class="button2" style={{ cursor: "not-allowed" }}>
+            <div class="button2" style={{ cursor: "not-allowed"}}>
               <span></span>
               <span></span>
               <span></span>
@@ -100,16 +100,9 @@ function Contact() {
               <span></span>
               Submit
             </div>
-            <ToastContainer />
+            <ToastContainer bodyClassName="toastBody"/>
           </>
         )}
-      </div>
-      <div className="right-circle">
-        <div className="esp1"></div>
-        <div className="esp2"></div>
-        <div className="esp3"></div>
-        <div className="esp4"></div>
-        <div className="esp5"></div>
       </div>
       {/* <Footer /> */}
     </div>
