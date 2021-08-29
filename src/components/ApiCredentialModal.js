@@ -1,11 +1,8 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 import Modal from "react-modal";
-import colors from "../constants/Colors";
-import Cookies from 'js-cookie'
-import {useDispatch } from "react-redux";
-import {  Button } from "react-bootstrap";
+import { useDispatch } from "react-redux";
 import { submitNewCredentials } from "../redux/apicredentials/actions";
-import swal from 'sweetalert';
+import swal from "sweetalert";
 
 const customStyles = {
   content: {
@@ -22,7 +19,7 @@ const ApiCredentialModal = (props) => {
   const [state, setState] = React.useState({
     appName: "",
     apiKey: "",
-    secretKey:""
+    secretKey: "",
   });
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -30,14 +27,17 @@ const ApiCredentialModal = (props) => {
     console.log(state);
   };
 
-
-  const handleSubmit = (e) => { 
+  const handleSubmit = (e) => {
     e.preventDefault();
-    if (state.apiKey.length >= 6 && state.appName.length >= 5 && state.secretKey.length >= 5) {
-      dispatch(submitNewCredentials(state))
-    }else{
+    if (
+      state.apiKey.length >= 6 &&
+      state.appName.length >= 5 &&
+      state.secretKey.length >= 5
+    ) {
+      dispatch(submitNewCredentials(state));
+    } else {
       swal("Invalid Entry", "Enter valid fields to continue!", "error");
-    }      
+    }
   };
 
   return (
@@ -45,7 +45,6 @@ const ApiCredentialModal = (props) => {
       <div>
         <Modal
           isOpen={props.modalIsOpen}
-          // onAfterOpen={afterOpenModal}
           onRequestClose={props.closeModal}
           style={customStyles}
           contentLabel="Example Modal"
@@ -57,7 +56,6 @@ const ApiCredentialModal = (props) => {
                 justifyItems: "center",
                 alignItems: "center",
                 justifyContent: "space-between",
-                
               }}
             >
               <div style={{ fontSize: 18, fontWeight: "bold" }}>App Api</div>
@@ -70,7 +68,7 @@ const ApiCredentialModal = (props) => {
             </div>
             <div style={{ marginTop: 30 }}>
               <div class="">
-                <form onSubmit={handleSubmit} >
+                <form onSubmit={handleSubmit}>
                   <label for="fname">App Name</label>
                   <input
                     style={inputbox}
@@ -81,12 +79,26 @@ const ApiCredentialModal = (props) => {
                     onChange={handleChange}
                   />
                   <label for="lname">Api Key</label>
-                  <input style={inputbox} type="text" id="lname" name="apiKey" placeholder="ADD API KEY" onChange={handleChange}/>
+                  <input
+                    style={inputbox}
+                    type="text"
+                    id="lname"
+                    name="apiKey"
+                    placeholder="ADD API KEY"
+                    onChange={handleChange}
+                  />
                   <label for="lname">Secret Key</label>
-                  <input style={inputbox} type="text" id="lname" name="secretKey" placeholder="ADD SECRET KEY"  onChange={handleChange}/>
-                  <div style={{marginTop:20}}>
-                <button class="login100-form-btn" >Add Api</button>
-              </div>
+                  <input
+                    style={inputbox}
+                    type="text"
+                    id="lname"
+                    name="secretKey"
+                    placeholder="ADD SECRET KEY"
+                    onChange={handleChange}
+                  />
+                  <div style={{ marginTop: 20 }}>
+                    <button class="login100-form-btn">Add Api</button>
+                  </div>
                 </form>
               </div>
             </div>

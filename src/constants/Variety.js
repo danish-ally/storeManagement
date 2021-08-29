@@ -31,7 +31,6 @@ const variety = [
     label: "AUTO STRIKE PRICE",
     value: "AUTOSTRIKEPRICE",
   },
-  
 ];
 
 export default variety;

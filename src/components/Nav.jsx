@@ -19,7 +19,7 @@ function Nav(props) {
           margin: 10,
           padding: 10,
           backgroundColor: "white",
-          width:'100%'
+          width: "100%",
         }}
         className="container d-flex content"
       >

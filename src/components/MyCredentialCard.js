@@ -25,17 +25,13 @@ const MyCredentialCard = (props) => {
             justifyContent: "space-between",
           }}
         >
-          <div>
-            {props.name}
-          </div>
+          <div>{props.name}</div>
           <div>8098</div>
         </div>
 
         <div style={{ marginTop: 10, fontSize: 14 }}>API Key : X X X X X X</div>
         <div style={{ fontSize: 14 }}>Public Key : X X X X X X X X</div>
-        <div style={{ fontSize: 14 }}>
-          Last Token Update : -
-        </div>
+        <div style={{ fontSize: 14 }}>Last Token Update : -</div>
         <div style={{ marginTop: 15 }}>
           <div
             style={{
