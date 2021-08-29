@@ -1,6 +1,7 @@
 import { React } from "react";
 import "./Home.css";
-// import GetStart from "../components/GetStart";
+import GetStart from "../../../../src/components/GetStart";
+import PhotoAnimation from "../../../../src/components/PhotoAnimation";
 import Typewriter from "typewriter-effect";
 // import PhotoAnimation from "../components/PhotoAnimation";
 
@@ -26,11 +27,11 @@ const Home = (props) => {
           />
         </div>
         <div className="get-btn">
-          {/* <GetStart name="Get Started"/> */}
+          <GetStart name="Get Started"/>
         </div>
       </div>
       <div className="photo">
-        {/* <PhotoAnimation /> */}
+        <PhotoAnimation />
       </div>
       {/* <div className="circle">
         <div className="esp1"></div>

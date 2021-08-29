@@ -27,6 +27,11 @@ const _nav =  [
         name: 'Syntax Generator',
         to: '/tools/syntaxGenerator',
       },
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Api Credentials',
+        to: '/tools/apiCredentials',
+      },
     ],
   },  
   {

@@ -19,15 +19,17 @@ const Market = (props) => {
     <>
       <div style={{ overflow: "hidden", height: "100%" }}>
         <PageSlider
-          horizontal={false}
-          sensitivity={10}
-          navigation={{
-            type: "left",
-            hide: false,
-            size: 50,
-            unit: "vh",
-          }}
           compList={compList}
+          horizontal={false}
+          actionFlagTime={500}
+          sensitivity={100}
+          navigation={{
+            type: "right",
+            hide: true,
+            timer: 2000,
+            size: 16,
+            unit: "px",
+          }}
         />
       </div>
     </>

@@ -71,7 +71,8 @@ export default function SignIn(props) {
                 class="login100-form-btn"
                 style={{
                   background: "#dbdbdb",
-                  paddingLeft: "0"
+                  paddingLeft: "0",
+                  border: "none"
                 }}
               >
                 <div class="button2">

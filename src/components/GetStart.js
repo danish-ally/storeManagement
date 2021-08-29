@@ -9,8 +9,8 @@ function GetStart() {
     history.push("/contact");
   };
   return (
-      <div className="btn-conta">
-    <div class="button2" onClick={callContact}>
+      <div className="btn-conta" >
+    <div class="button2" onClick={callContact}style={{ marginLeft: "0",marginTop: "20px" }} >
       <span></span>
       <span></span>
       <span></span>
