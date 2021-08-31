@@ -13,7 +13,7 @@ function WorkingExp() {
           justifyContent: "flex-start"
         }}>
           <h3>
-          Working with these Institutions helped he gain experience over the years.
+          Working with these Institutions helped me gain experience over the years.
           </h3>
         </div>
         <div className="images">

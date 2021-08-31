@@ -19,16 +19,13 @@ const Home = (props) => {
           <Typewriter
             onInit={(typewriter) => {
               typewriter
-                .typeString("Hi! I'm Nadeem. I am a Wealth Manager.")
+                .typeString("Hi. I'm Nadeem. I am a Wealth Manager.")
                 .pauseFor(2000)
                 .deleteAll()
-                .typeString("Hi! I'm Nadeem. I am a Wealth Manager.")
+                .typeString("Hi. I'm Nadeem. I am a Wealth Manager.")
                 .start();
             }}
           />
-        </div>
-        <div className="get-btn">
-          <GetStart name="Get Started" />
         </div>
       </div>
       <div className="photo">

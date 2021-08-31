@@ -10,6 +10,9 @@ const apiCredentials = React.lazy(() =>
 const brokerSymbol = React.lazy(() =>
   import("./views/pages/brokerSymbol/BrokerSymbol")
 );
+const contactData = React.lazy(() =>
+  import("./views/pages/contactdata/ContactData")
+);
 
 const routes = [
   { path: "/", exact: true, name: "Home" },
@@ -17,6 +20,7 @@ const routes = [
   { path: "/tools/syntaxGenerator", name: "Tools", component: SyntaxGenerator },
   { path: "/tools/apiCredentials", name: "Tools", component: apiCredentials },
   { path: "/tools/brokerSymbol", name: "Tools", component: brokerSymbol },
+  { path: "/extra/contactData", name: "Tools", component: contactData },
 ];
 
 export default routes;

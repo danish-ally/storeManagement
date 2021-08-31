@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Login.css";
 import { logUserIn } from "../../../../redux/auth/actions";
 import { useSelector, useDispatch } from "react-redux";
 import "./Login.css";
-
+import validator from "validator";
 
 export default function SignIn(props) {
   const authState = useSelector((state) => state.authState);
@@ -15,17 +15,25 @@ export default function SignIn(props) {
     password: "",
   });
   const [status, setStatus] = React.useState(null);
+ 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setState((prevState) => ({ ...prevState, [name]: value }));
     console.log(state);
   };
 
+  const [EmailError, setEmailError] = useState("");  
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(logUserIn(state));
     console.log(state.email, state.password);
   };
+
+  // if (validator.isEmail(state.email)) {
+  //   setEmailError("Valid Email :)");
+  // } else {
+  //   setEmailError("Enter valid Email!");
+  // }
 
   return (
     <div className="login-cont">
@@ -36,7 +44,7 @@ export default function SignIn(props) {
             justifyContent: "flex-start",
           }}
         >
-          Member of My community?
+          Client Login?
         </div>
         <div className="cnt-form">
           <form onSubmit={handleSubmit}>
@@ -47,6 +55,14 @@ export default function SignIn(props) {
               placeholder="Username"
               onChange={handleChange}
             />
+            <span
+              style={{
+                fontWeight: "bold",
+                color: "red",
+              }}
+            >
+              {/* {emailError} */}
+            </span>
             <input
               class="input100"
               type="password"
@@ -64,15 +80,18 @@ export default function SignIn(props) {
             >
               {authState.error}
             </div>
-            <div class="container-login100-form-btn" style={{
-                  alignItems: "center"
-                }}>
+            <div
+              class="container-login100-form-btn"
+              style={{
+                alignItems: "center",
+              }}
+            >
               <button
                 class="login100-form-btn"
                 style={{
                   background: "#dbdbdb",
                   paddingLeft: "0",
-                  border: "none"
+                  border: "none",
                 }}
               >
                 <div class="button2">

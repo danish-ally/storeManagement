@@ -1,15 +1,17 @@
 import { React, useState } from "react";
 import "./Contact.css";
 // import GetStart from "../components/GetStart";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer, toast } from 'react-toastify'
 import "react-toastify/dist/ReactToastify.css";
 import { useHistory } from "react-router";
+import { useDispatch } from "react-redux";
+import { submitContactUs } from "../../../../redux/contactUs/actions";
 
 function Contact() {
   const [state, setstate] = useState({
-    firstname: "",
-    lastname: "",
-    Email: "",
+    firstName: "",
+    lastName: "",
+    email: "",
     subject: "",
   });
   const handleChange = (e) => {
@@ -18,18 +20,19 @@ function Contact() {
     console.log(state);
   };
   const handleSubmit = (e) => {
-    console.log(state.firstname, state.lastname, state.Email, state.subject);
+    console.log(state.firstName, state.lastName, state.email, state.subject);
+    e.preventDefault();
+    dispatch(submitContactUs(state));
   };
 
-  const notify = () => {
-    toast.success("Submitted succesfully!");
-  };
+  const notify = () => toast("Submitted successfully!");
 
   let history = useHistory();
   const callContact = () => {
     console.log("Clicked");
     history.push("/contact");
   };
+  const dispatch = useDispatch();
   return (
     <div className="contact-cont">
       <div className="left-cont1">
@@ -42,7 +45,7 @@ function Contact() {
             <input
               type="text"
               id="fname"
-              name="firstname"
+              name="firstName"
               placeholder="First Name"
               onChange={handleChange}
             />
@@ -51,15 +54,15 @@ function Contact() {
             <input
               type="text"
               id="lname"
-              name="lastname"
+              name="lastName"
               placeholder="Last Name"
               onChange={handleChange}
             />
             {/* <label for="email">Email</label> */}
             <input
               type="text"
-              id="Email"
-              name="Email"
+              id="email"
+              name="email"
               placeholder="Email"
               onChange={handleChange}
             />
@@ -74,35 +77,40 @@ function Contact() {
               }}
               onChange={handleChange}
             ></textarea>
+            {state.firstName === "" ||
+            state.lastName === "" ||
+            state.email === "" ||
+            state.subject === "" ? (
+              <>
+                <button
+                  class="button2"
+                  style={{ cursor: "not-allowed", background: "#dbdbdb" }}
+                >
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  Submit
+                </button>
+              </>
+            ) : (
+              <>
+                <button
+                  class="button2"
+                  onClick={notify}
+                  style={{ background: "#dbdbdb" }}
+                >
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  Submit
+                </button>
+                <ToastContainer />
+              </>
+            )}
           </form>
         </div>
-      </div>
-      <div className="middle-btn">
-        {state.firstname === "" ||
-        state.lastname === "" ||
-        state.Email === "" ||
-        state.subject === "" ? (
-          <>
-            <div class="button2" style={{ cursor: "not-allowed"}}>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              Submit
-            </div>
-          </>
-        ) : (
-          <>
-            <div class="button2" onClick={notify}>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              Submit
-            </div>
-            <ToastContainer bodyClassName="toastBody"/>
-          </>
-        )}
       </div>
       {/* <Footer /> */}
     </div>

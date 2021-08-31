@@ -35,7 +35,7 @@ const SyntaxGenerator = (props) => {
   }, [dispatch]);
 
   const [show, setshow] = useState(false);
-
+  console.log("this is what",syntaxGeneratorState)
   return (
     <div style={{ padding: 25 }}>
       <div style={{ fontSize: 25 }}>Syntax Generator</div>
