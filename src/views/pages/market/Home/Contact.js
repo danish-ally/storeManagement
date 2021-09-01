@@ -84,7 +84,7 @@ function Contact() {
               <>
                 <button
                   class="button2"
-                  style={{ cursor: "not-allowed", background: "#dbdbdb" }}
+                  style={{ cursor: "not-allowed", background: "#fff" }}
                 >
                   <span></span>
                   <span></span>
@@ -98,7 +98,7 @@ function Contact() {
                 <button
                   class="button2"
                   onClick={notify}
-                  style={{ background: "#dbdbdb" }}
+                  style={{ background: "#fff" }}
                 >
                   <span></span>
                   <span></span>

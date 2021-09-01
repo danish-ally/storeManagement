@@ -89,7 +89,7 @@ export default function SignIn(props) {
               <button
                 class="login100-form-btn"
                 style={{
-                  background: "#dbdbdb",
+                  background: "#fff",
                   paddingLeft: "0",
                   border: "none",
                 }}
