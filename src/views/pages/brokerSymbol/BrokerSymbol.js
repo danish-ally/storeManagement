@@ -50,6 +50,7 @@ const BrokerSymbol = (props) => {
     ],
   });
 
+  console.log("this:", brokerListState.data);
   return (
     <>
       <div style={{ padding: 25 }}>

@@ -1,8 +1,7 @@
 import { React } from "react";
 import "./Home.css";
-import GetStart from "../../../../src/components/GetStart";
-import PhotoAnimation from "../../../../src/components/PhotoAnimation";
 import Typewriter from "typewriter-effect";
+import frontPic from "../../../../src/images/frontPic.png"
 
 const Home = (props) => {
   return (
@@ -19,20 +18,17 @@ const Home = (props) => {
           <Typewriter
             onInit={(typewriter) => {
               typewriter
-                .typeString("Hi! I'm Nadeem. I am a Wealth Manager.")
+                .typeString("Hi. I am Nadeem. I am a Wealth Manager.")
                 .pauseFor(2000)
                 .deleteAll()
-                .typeString("Hi! I'm Nadeem. I am a Wealth Manager.")
+                .typeString("Hi. I am Nadeem. I am a Wealth Manager.")
                 .start();
             }}
           />
         </div>
-        <div className="get-btn">
-          <GetStart name="Get Started" />
-        </div>
       </div>
       <div className="photo">
-        <PhotoAnimation />
+        <img src={frontPic} alt="frontpic" />
       </div>
     </div>
   );

@@ -8,7 +8,7 @@
   height: 100vh;
   left: 0px;
   top: 0px;
-  background: #dbdbdb;
+  background: #fff;
   padding: 2rem;
 }
 .contact-cont .left-cont1 {
@@ -46,11 +46,12 @@
 .contact-cont .contact-form {
   padding: 3rem;
   /* height: 50%; */
-  width: 95%;
+  width: 80%;
 }
 .contact-form form {
   /* box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; */
   padding: 2rem;
+
 }
 input[type="text"],
 select,

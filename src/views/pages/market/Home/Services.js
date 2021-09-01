@@ -35,7 +35,7 @@ function Services() {
                 aria-expanded="false"
                 aria-controls="flush-collapseOne"
                 style={{
-                  backgroundColor: "#dbdbdb",
+                  backgroundColor: "#fff",
                   fontWeight: "bold",
                   fontSize: "1.2rem"
     
@@ -51,7 +51,7 @@ function Services() {
               data-bs-parent="#accordionFlushExample"
             >
               <div class="accordion-body" style={{
-                  backgroundColor: "#dbdbdb",
+                  backgroundColor: "#fff",
                   textAlign: "justify",
                 }}>
                 We offer a suite of investment opportunities by carefully vetted
@@ -86,7 +86,7 @@ function Services() {
                 aria-expanded="false"
                 aria-controls="flush-collapseTwo"
                 style={{
-                  backgroundColor: "#dbdbdb",
+                  backgroundColor: "#fff",
                   fontWeight: "bold",
                   fontSize: "1.2rem"
                 }}
@@ -101,7 +101,7 @@ function Services() {
               data-bs-parent="#accordionFlushExample"
             >
               <div class="accordion-body" style={{
-                  backgroundColor: "#dbdbdb",
+                  backgroundColor: "#fff",
                   textAlign: "justify",
                 }}>
               we offer clients the ability to trade in multiple securities and asset classes around the world. Many of our clients look to us not only for our execution capabilities but also for hedging and structuring solutions that help them manage a broad spectrum of risks. By combining our understanding of a client’s objectives with our strong derivatives expertise, we provide industry-leading advice, solutions and liquidity.
@@ -118,7 +118,7 @@ function Services() {
                 aria-expanded="false"
                 aria-controls="flush-collapseThree"
                 style={{
-                  backgroundColor: "#dbdbdb",
+                  backgroundColor: "#fff",
                   fontWeight: "bold",
                   fontSize: "1.2rem"
                 }}
@@ -133,7 +133,7 @@ function Services() {
               data-bs-parent="#accordionFlushExample"
             >
               <div class="accordion-body" style={{
-                  backgroundColor: "#dbdbdb",
+                  backgroundColor: "#fff",
                   textAlign: "justify",
                 }}>
               To address client needs for income, estate planning, gift planning, generation-skipping tax planning and philanthropy, our Wealth Advisory Services group can help to craft and implement holistic wealth management solutions.
@@ -150,7 +150,7 @@ function Services() {
                 aria-expanded="false"
                 aria-controls="flush-collapseFour"
                 style={{
-                  backgroundColor: "#dbdbdb",
+                  backgroundColor: "#fff",
                   fontWeight: "bold",
                   fontSize: "1.2rem"
                 }}
@@ -165,7 +165,7 @@ function Services() {
               data-bs-parent="#accordionFlushExample"
             >
               <div class="accordion-body" style={{
-                  backgroundColor: "#dbdbdb",
+                  backgroundColor: "#fff",
                   textAlign: "justify",
                 }}>
               The dedicated team administers a wide variety of trusts, estates, foundations, and other fiduciary mandates that integrate a broad spectrum of wealth advisory services and investment strategies.
@@ -182,7 +182,7 @@ function Services() {
                 aria-expanded="false"
                 aria-controls="flush-collapseFive"
                 style={{
-                  backgroundColor: "#dbdbdb",
+                  backgroundColor: "#fff",
                   fontWeight: "bold",
                   fontSize: "1.2rem"
                 }}
@@ -197,7 +197,7 @@ function Services() {
               data-bs-parent="#accordionFlushExample"
             >
               <div class="accordion-body" style={{
-                  backgroundColor: "#dbdbdb",
+                  backgroundColor: "#fff",
                   textAlign: "justify",
                 }}>
               For US clients and Global clients our capabilities extend to managing the investment needs of small- to mid-size institutions such as foundations and endowments. Our specialized support and advice can be tailored to the organization’s needs and goals.

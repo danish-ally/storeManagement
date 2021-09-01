@@ -7,7 +7,7 @@
   height: 100vh;
   left: 0px;
   top: 0px;
-  background: #dbdbdb;
+  background: #fff;
   padding: 2rem;
 }
 .home-cont .intro .desc {
@@ -30,11 +30,15 @@
 }
 .home-cont .photo {
   width: 571px;
-  height: 472px;
+  height: 540px;
   left: 587px;
   top: 123px;
   cursor: pointer;
-  background: #c4c4c4;
+  background: #fff;
+}
+.home-cont .photo img{
+  width: 571px;
+  height: 600px;
 }
 .home-cont .circle {
   display: flex;

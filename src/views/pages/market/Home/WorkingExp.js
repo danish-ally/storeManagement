@@ -12,8 +12,8 @@ function WorkingExp() {
         <div className="title" style={{
           justifyContent: "flex-start"
         }}>
-          <h3>
-          Working with these Institutions helped he gain experience over the years.
+          <h3 style={{ color: "black"}}>
+          Working with these Institutions helped me gain experience over the years.
           </h3>
         </div>
         <div className="images">

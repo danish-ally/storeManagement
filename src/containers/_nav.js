@@ -42,6 +42,19 @@ const _nav = [
   {
     _tag: "CSidebarNavDivider",
   },
+  {
+    _tag: "CSidebarNavDropdown",
+    name: "Extra",
+    route: "/extra",
+    icon: "cil-puzzle",
+    _children: [
+      {
+        _tag: "CSidebarNavItem",
+        name: "Contact",
+        to: "/extra/contactData",
+      },
+    ],
+  },
 ];
 
 export default _nav;
