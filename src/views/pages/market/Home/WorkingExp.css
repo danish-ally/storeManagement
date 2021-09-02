@@ -11,70 +11,65 @@
   padding: 6rem;
 }
 .WorkingExp-cont .left .title{
-  /* When I was a freelancer, I wrote for websites and publications including: */
-
-  /* position: absolute; */
-  /* When I was a freelancer, I wrote for websites and publications including: */
-
 position: absolute;
 width: 773px;
 height: 100px;
 left: 188px;
 top: 160px;
-
 font-family: 'DM Serif Display', serif;
 font-style: normal;
 font-weight: bold;
 font-size: 36px;
 line-height: 50px;
-
 color: #000000;
-
-
 }
 .WorkingExp-cont .left-cont .images {
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
+  flex-wrap: wrap;
 }
 .WorkingExp-cont .left-cont .images .img1 img, .img2 img, .img3 img, .img4 img{
-  /* Rectangle 5 */
-
-/* position: absolute; */
 width: 284px;
 height: 186px;
 left: 188px;
 top: 318px;
-
-/* background: #c4c4c4; */
-
 }
 .WorkingExp-cont .left-cont .images .img2 img, .img3 img, .img4 img{
-
 padding: 2rem;
-/* background: #c4c4c4; */
+}
 
+@media only screen and (max-width: 768px) {
+  .WorkingExp-cont .left-cont .images {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
-.WorkingExp-cont .right-cont .circle {
-  display: flex;
+@media only screen and (max-width: 680px) {
+  .WorkingExp-cont {
+    padding: 4rem;
+  }
+  .WorkingExp-cont .left-cont .title{
+    justify-content: center;
+    text-align: center;
+  }
 }
-.WorkingExp-cont .right-cont .circle2 .espp3{
-  width: 17px;
-  height: 17px;
-  left: 1221px;
-  top: 241px;
-  border-radius: 50%;
-  background: #605f5f;
-  transform: rotate(90deg);
-  margin-top: 35px;
+@media only screen and (max-width: 425px) {
+  .WorkingExp-cont {
+    padding: 3rem;
+  }
+  .WorkingExp-cont .left-cont .title h3{
+    font-size: 20px;
+  }
+  .WorkingExp-cont .left-cont .images .img1 img, .img2 img, .img3 img, .img4 img{
+    width: 284px;
+    height: 186px;
+    left: 188px;
+    top: 318px;
+    }
 }
-.WorkingExp-cont .right-cont .circle2 .espp1, .espp2, .espp4, .espp5{
-  width: 17px;
-  height: 17px;
-  left: 1221px;
-  top: 241px;
-  border-radius: 50%;
-  background: #fff;
-  transform: rotate(90deg);
-  margin-top: 35px;
+@media only screen and (max-width: 360px) {
+  .WorkingExp-cont {
+    padding: 1rem;
+  }
 }

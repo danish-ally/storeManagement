@@ -44,7 +44,7 @@ export default function SignIn(props) {
             justifyContent: "flex-start",
           }}
         >
-          Client Login?
+          Client Login
         </div>
         <div className="cnt-form">
           <form onSubmit={handleSubmit}>
@@ -85,6 +85,7 @@ export default function SignIn(props) {
               style={{
                 alignItems: "center",
               }}
+              className="btn-container"
             >
               <button
                 class="login100-form-btn"
