@@ -66,3 +66,20 @@
   transform: rotate(90deg);
   margin-top: 35px;
 }
+
+@media only screen and (max-width: 768px) {
+  .home-cont .photo{
+    display: none;
+  }
+  .home-cont .intro .desc {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .home-cont .intro .desc {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    text-align: center;
+  }
+}

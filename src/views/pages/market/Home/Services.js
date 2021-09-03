@@ -206,13 +206,6 @@ function Services() {
           </div>
         </div>
       </div>
-      {/* <div className="circle">
-        <div className="esp1"></div>
-        <div className="esp2"></div>
-        <div className="esp3"></div>
-        <div className="esp4"></div>
-        <div className="esp5"></div>
-      </div> */}
     </div>
   );
 }

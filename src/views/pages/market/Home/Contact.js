@@ -73,7 +73,7 @@ function Contact() {
               name="subject"
               placeholder="What's on your mind?"
               style={{
-                height: "200px",
+                height: "100px",
               }}
               onChange={handleChange}
             ></textarea>

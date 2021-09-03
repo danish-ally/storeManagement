@@ -148,3 +148,32 @@ input[type="submit"]:hover {
   font-size: 0.875rem !important;
   height: 20px;
 }
+@media only screen and (max-width: 768px) {
+  .contact-cont .contact-form {
+    padding-left: 0;
+    padding-right: 0;
+    /* height: 50%; */
+    width: 100%;
+  }
+  .contact-cont .contact-form form{
+    padding-left: 0;
+    padding-right: 0;
+    /* height: 50%; */
+    width: 100%;
+  }
+  .contact-cont .left-cont1 .title2 {
+    padding-left: 0rem;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .contact-cont {
+    height: 100vh;
+  }
+  .contact-cont .left-cont1 .title2{
+    /* display: flex; */
+    justify-content: center;
+  }
+  .contact-cont .contact-form {
+   padding-top: 0;
+  }
+}

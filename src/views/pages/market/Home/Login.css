@@ -214,3 +214,63 @@ input[type="submit"]:hover {
   transform: rotate(90deg);
   margin-top: 35px;
 }
+
+@media only screen and (max-width: 768px) {
+  .login-cont{
+    justify-content: center;
+  }
+  .login-cont .cnt-form .btn-container{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .login-cont{
+    justify-content: center;
+  }
+  .login-cont .cnt-form .btn-container{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .login-cont .cnt-form {
+    display: flex;
+    justify-content: center;
+  }
+  .login-cont .cnt-form form{
+    width: 78%;
+  }
+  .login-cont .cnt-form .btn-container{
+    flex-direction: column;
+    width: 100%;
+  }
+  .login-cont .cnt-form .btn-container button{
+    width: 100%;
+  }
+  .login-cont .cnt-form .btn-container a{
+    width: 100%;
+  }
+  .login-cont .cnt-form .btn-container a .button2{
+    width: 100%;
+    text-align: center;
+  }
+  .login-cont .cnt-form .btn-container button .button2{
+    width: 100%;
+  }
+  
+  .login-cont .left-cont .title {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .login-cont {
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .login-cont .cnt-form form{
+    width: 65%;
+  }
+}
